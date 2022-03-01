@@ -1,0 +1,18 @@
+{
+    "users": [
+        {   
+            " nom_complet": "Babacar Mané",
+            "login": "abubakr@gmood.com",
+            "password": "yujiro123",
+            "joueur": "ROLE_JOUEUR",
+            "score": 21
+        },
+        {
+            " nom_complet": "Mouhamed Faye",
+            "login": "mamesexx@gmood.com",
+            "password": "touba123",
+            "joueur": "ROLE_ADMIN",
+            "score": 30  
+        }
+    ]
+}
