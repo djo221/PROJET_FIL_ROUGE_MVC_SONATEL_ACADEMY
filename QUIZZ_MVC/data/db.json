@@ -1,0 +1,108 @@
+{
+    "users": [
+        {
+            "nom": "itachi",
+            "prenom": "uchiha",
+            "login": "itachi@manga.com",
+            "password": "itachi",
+            "role": "ROLE_JOUEUR",
+            "score": 21
+        },
+        {
+            "nom": "sasuke",
+            "prenom": "uchiha",
+            "login": "sasule@manga.com",
+            "password": "sasuke",
+            "role": "ROLE_JOUEUR",
+            "score": 44
+        },
+        {
+            "nom": "gaara",
+            "prenom": "diop",
+            "login": "itachi@manga.com",
+            "password": "gaara",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "leuk daour mbaye",
+            "prenom": "diop",
+            "login": "leuk@manga.com",
+            "password": "leuk",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "bouki",
+            "prenom": "ndour samb",
+            "login": "bouli@manga.com",
+            "password": "bouli",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "lirou",
+            "prenom": "diane",
+            "login": "lirou@manga.com",
+            "password": "lirou",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "ni\u00e9khou",
+            "prenom": "n\u00e9ne",
+            "login": "niekh@manga.com",
+            "password": "niekh",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "lut ",
+            "prenom": "wrld",
+            "login": "lut@manga.com",
+            "password": "lut",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": "Mbaxana ",
+            "prenom": "Niakh",
+            "login": "mbaxana@manga.com",
+            "password": "mbaxana",
+            "role": "ROLE_JOUEUR",
+            "score": 45
+        },
+        {
+            "nom": " naruto",
+            "prenom": "uzumaki",
+            "login": "naruto@manga.com",
+            "password": "itachi",
+            "role": "ROLE_ADMIN",
+            "score": 30
+        },
+        {
+            "nom": "fall",
+            "prenom": "moussa",
+            "login": "admin@admin.sn",
+            "password": "passer2022",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        },
+        {
+            "nom": "fall",
+            "prenom": "moussa",
+            "login": "admin@admin.sn",
+            "password": "passer2022",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        },
+        {
+            "nom": "fall",
+            "prenom": "moussa",
+            "login": "admin@admin.sn",
+            "password": "passer2022",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        }
+    ]
+}
