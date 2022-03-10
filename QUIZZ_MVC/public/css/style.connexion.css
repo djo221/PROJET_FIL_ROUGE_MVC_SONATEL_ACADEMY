@@ -1,0 +1,109 @@
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+.container-form {
+    margin-top: 10%;
+    width: 45vw;
+     visibility: visible;
+     display: flex;
+     flex-direction: column;
+     border-radius: 2px;
+     height: 60vh;
+    }
+.header-form{
+    background-color: #51bfd0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2%;
+}
+.header-form h4{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 00.5rem;
+}
+
+form {
+ height: 80%;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 1.5em;
+}
+
+ input[type=text], input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 70%;
+    padding: 0.2rem;
+    border: none;
+    border: 1px solid black;
+} 
+
+input[type=submit] {
+    background-color: #51bfd0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-left: 2%;
+    padding: 0.2rem;
+}
+
+small{
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+   margin: 0;
+}
+
+
+.form input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form.success input{
+    border-color: var(--success-color);
+}
+
+.form.error input{
+    border-color: var(--error-color);
+}
+
+.form small{
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form.error small{
+    visibility: visible;
+}

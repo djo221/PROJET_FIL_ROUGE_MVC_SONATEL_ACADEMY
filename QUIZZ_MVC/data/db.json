@@ -103,6 +103,30 @@
             "password": "passer2022",
             "role": "ROLE_JOUEUR",
             "score": 0
+        },
+        {
+            "nom": "car",
+            "prenom": "baba",
+            "login": "baba@gmail.com",
+            "password": "12345aA",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        },
+        {
+            "nom": "hussary",
+            "prenom": "s\u00e9ll\u00e9",
+            "login": "selle@gmail.com",
+            "password": "12345aA",
+            "role": "ROLE_JOUEUR",
+            "score": 0
+        },
+        {
+            "nom": "fall",
+            "prenom": "Mouhamed",
+            "login": "mouha@manga.com",
+            "password": "12345aA",
+            "role": "ROLE_JOUEUR",
+            "score": 0
         }
     ]
 }

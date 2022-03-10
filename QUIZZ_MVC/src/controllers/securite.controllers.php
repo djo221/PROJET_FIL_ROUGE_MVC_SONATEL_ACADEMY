@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($_REQUEST['action'] == "inscription") {
             
             extract($_POST);
-            inscription( $prenom , $nom , $login, $password  );
-            
+            inscription( $prenom , $nom , $login, $password , $cpassword );
+
            /*  var_dump($_POST);  die("thiabaakh nako ci"); */
         } 
         
@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 function connexion(string $login, string $password): void
 {
 
+
     $errors = [];
 
     champ_obligatoire('login', $login, $errors, "login obligatoire");
@@ -58,6 +59,8 @@ function connexion(string $login, string $password): void
     }
 
     champ_obligatoire('password', $password, $errors,  "mot de passe obligatoire");
+
+  
     
     if (count($errors) == 0) {
       
@@ -93,7 +96,7 @@ function logout()
     exit();
 }
 
-function  inscription ($prenom ,$nom, $login ,$password ): void {
+function  inscription ($prenom ,$nom, $login ,$password , $cpassword ): void {
 
     $errors = [];
 
@@ -112,6 +115,10 @@ function  inscription ($prenom ,$nom, $login ,$password ): void {
    champ_obligatoire('password' , $password , $errors , "password ne peut être vide ");
         if (!isset($errors['password'])) {
             valid_password('password' , $password , $errors , "password ne peut être vide ");
+        }
+
+        if (!valid_conf_password($password, $cpassword)) {
+            $errors['confirmpassword'] = "confirmer  mot de passe invalide ";
         }
 
 if (!count($errors) == 0) {

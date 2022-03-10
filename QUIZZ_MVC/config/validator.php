@@ -12,7 +12,7 @@ function valid_email(string $key, string $data, array &$errors, string $message 
     if (!filter_var($data, FILTER_VALIDATE_EMAIL)) {
         $errors[$key] = $message;
     }
-
+}
     function valid_password(string $key, string $password, array &$errors, string $message = "password invalid")
     {
     /*     $regexbeta = "^(?=\P{Ll}*\p{Ll})(?=\P{Lu}*\p{Lu})(?=\P{N}*\p{N})(?=[\p{L}\p{N}]*[^\p{L}\p{N}])[\s\S]{8,}$";*/
@@ -30,6 +30,27 @@ function valid_email(string $key, string $data, array &$errors, string $message 
             $errors[$key] = $message;
         } */
     }
+    function  valid_conf_password(string $password1 , string $password2):bool{
+        if (strcmp($password1, $password2) === 0) {
+            return true;
+        } 
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    /*  function logout(): void
     {
         $_SESSION['user_connect'] = array();
@@ -37,4 +58,4 @@ function valid_email(string $key, string $data, array &$errors, string $message 
         header("location:" . WEB_ROOT);
         exit();
     } */
-}
+
